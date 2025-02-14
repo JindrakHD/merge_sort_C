@@ -16,7 +16,7 @@ void merging(int start, int mid, int end, int arr[]){
 	int i = 0, j = 0; //index for left and right arrays
 	int k = start; //index for the actual index in the original arr
 	while ((i < leftLen) && (j < rightLen)){ //copying the numbers that could be compared (pairs)
-		if (leftArr[i] <= rightArr[j]){ //why da fuck i used "(mid+1)+i" for the rightArr comparison
+		if (leftArr[i] <= rightArr[j]){
 			arr[k] = leftArr[i];
 			i++;
 		}
